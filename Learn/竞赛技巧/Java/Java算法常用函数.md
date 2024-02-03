@@ -1,5 +1,24 @@
 # Java算法常用函数
 
+## String类
+```java
+// 查找
+int indexOf(String s)       // s在字符串中首次出现的索引位置，如果没有则返回-1
+int lastIndexOf(String s)   // s在指定字符串中最后一次出现的索引位置，如果没有则返回-1
+boolean startsWith(String prefix, int toffset) // 查找prefix是否为字符串的前缀，toffset:查找位置 默认从0
+
+// 获取
+char charAt(int index)      // 返回index处的字符
+String substring(int start, int end) // 返回索引start到end的字符串，索引从0开始 注：end要+1
+
+// 删除/修改
+String trim()               // 去除首尾的空格
+String replace("被替换字符串", "替换字符串")
+String toUpperCase()        // 全部转为大写字母
+String toLowerCase()        // 全部转为小写字母
+
+```
+
 ## Math类(操作number类型)
 ```java
 max(a, b); // 返回a和b中较大的值
@@ -10,12 +29,9 @@ sqrt(double a)
 abs(a)		
 // a的b次方，返回一个double类型的数。
 pow(double a, double b) 
-// 向上取整
-ceil(double x)		
-// 向下取整
-floor(double x)	
-// 四舍五入取整
-round(double x)	
+ceil(double x)          // 向上取整
+floor(double x)	        // 向下取整
+round(double x)	        // 四舍五入取整
 // 生成一个[0,1)之间的double类型的伪随机数
 random()				
 // tan，cos与sin类似
@@ -31,9 +47,8 @@ asin(double a)
 > 常用方法
 ```java
 // 将arr数组元素变为字符串，一般用于输出看看数组情况，省去遍历的繁琐操作
-toString(arr)  		
-// arr数组排序，可以传入匿名类Comparator自定义排序方式
-sort(arr,new Comparator<T>(){}) 	
+toString(arr)
+sort(arr, new Comparator<T>(){})    // arr数组排序，可以传入匿名类Comparator自定义排序方式
 // arr数组二分查找(需要排好序)元素ele，返回目标值索引，找不到返回-1			
 binarySearch(arr,ele) 	
 // 复制arr数组[from,to)位置元素，返回复制好的数组副本
@@ -69,18 +84,41 @@ frequency(list,ele)
 ## Integer
 > 常用方法
 ```java
-// Boolean，Double等都有类似将字符串转换的方法👇
-// 将字符串参数解析为带符号的十进制整数
-parseInt(String s) 	
-// 将字符串参数解析为第二个参数指定的基数中的有符号正整数
-// radix参数不填则默认以十进制数进行解析
-parseInt(String s, int radix)  
-// 将i转为k进制真值【有正负号】
-toString(int i，k) 
+// Boolean，Double等都有类似将字符串转换的方法
+int parseInt(String s, int radix)  // 将s以radix进制的格式解析，转为int类型。radix默认为10
+String toString(int num, int k)    // 将num转为k进制真值, k非必填
+int bitCount(int num)              // 计算把num转为二进制后其中包含多少个1
 ```
 
 ## Calendar(操作日期)
 > 常用方法
 ```java
+/*初始化 获取当前时区的时间*/
+import java.util.Calendar;
+Calendar calendar = Calendar.getInstance();
 
+// 设置指定字符串格式时间
+calendar.setTime(new Date("2000/01/01 00:00:00"));
+
+// 获取当前时间戳毫秒数
+long getTimeInMillis()
+
+```
+
+## BigDecimal(高精度，大数)
+
+Java中的BigDecimal类可以表示任意大小(任意精度)的数值，其范围理论上是无限的。
+
+它可以存储非常大或非常小的数值，无论是正数、负数还是零，只要内存允许，都可以进行精确表示。由于它不依赖于固定精度的浮点数表示，所以不会受到浮点数精度限制的问题
+
+
+> 常用方法
+
+```java
+/*初始化*/
+import java.math.BigDecimal;
+BigDecimal num = new BigDecimal(String);
+
+BigDecimal multiply(BigDecimal) // 相乘
+BigDecimal subtract(BigDecimal) // 相加
 ```

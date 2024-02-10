@@ -51,3 +51,6 @@ remove(index)
 // 返回首次出现某元素的索引
 indexOf(ele)
 ```
+
+## PriorityQueue (优先队列)
+[优先队列](https://www.cainiaojc.com/java/java-priorityqueue.html)

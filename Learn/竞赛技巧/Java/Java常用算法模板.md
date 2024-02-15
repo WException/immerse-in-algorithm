@@ -13,11 +13,10 @@ static boolean isPrime(int num){
 }
 ```
 
-### 输出格式
+### 前缀和(Prefix Sum)
+
 ```java
-double value = 3.412
-String.format("%.2f", value).toString();
-System.out.printf(%.3f,num);//保留三位小数
+
 ```
 
 ### 最大公因数/最小公倍数

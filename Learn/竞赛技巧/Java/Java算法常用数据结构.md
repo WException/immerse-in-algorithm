@@ -1,55 +1,47 @@
 # Java算法常用数据结构
 
 ## ArrayList(链表)
+
+链表是可扩展长度的数组。
+
+ **函数名**           | **功能**         
+:-----------------:|:--------------:
+ add(ele)          | 将ele插入到数组中     
+ remove(int idx)   | 删除下标idx的元素     
+ set(int idx, ele) | 替换idx处的元素为ele  
+ get(int idx)      | 获取idx处的元素      
+ indexOf(ele)      | 返回第一次出现ele的索引  
+ lastIndexOf(ele)  | 返回最后一次出现ele的索引 
+ size()            | 返回链表的长度        
+ isEmpty()         | 判断链表是否为空       
+ toArray()         | 转为数组           
+
+## 栈
+
+栈是一种具有 先入后出 特点的抽象数据结构，可使用数组或链表实现
+
 ```java
-// 默认将元素添加到链表尾，可以通过index添加到指定位置
-add(ele)
-// 移除指定位置元素
-remove(index)
-// 修改指定位置元素
-set(index,element)
-// 得到指定位置元素
-get(index)
-// 返回第一次/最后一次出现某元素的索引
-indexOf/lastIndexOf(ele)
-//返回大小/是否为空
-size()/isEmpty()
-// 链表变数组
-toArray()
-// 字符串形式输出【若要输出自定义形式，可以遍历后用StringBuilder拼接】
-toString()
+Stack<Integer> stack = new Stack<>(); // 初始化
+stack.push(1); // 入栈
+stack.pop(); // 出栈
 ```
-## LinkedList(栈和队列)
 
-> 栈常用方法
+在Java中不推荐使用```Vector```及其子类```Stack``` 一般使用```LinkedList```。
 
 ```java
-// 栈顶插入元素
-push(ele)   
-// 返回栈顶元素并弹出    
-pop()   
-//返回栈顶元素但不弹出
-peek()    
+LinkedList<Integer> stack = new LinkedList<>(); // 初始化
+stack.addLast(1); // 入栈
+stack.removeLast(); // 出栈
 ```
-> 队列常用方法
+
+## 队列
+
+队列是一种具有 先入先出 特点的抽象数据结构，可使用链表实现
 
 ```java
-// 头插
-addFirst(ele)
-// 尾插
-addLast(ele)
-// 获取队列头元素    
-getFirst()
-// 获取队列尾元素    
-getLast
-// 获取头元素并弹出
-poll()
-// 获取尾元素并弹出     
-pollLast() 
-// 删除指定索引元素    
-remove(index)
-// 返回首次出现某元素的索引
-indexOf(ele)
+Queue<Integer> queue = new LinkedList<>(); // 初始化
+queue.offer(1); // 入队
+queue.poll(); // 出队
 ```
 
 ## PriorityQueue (优先队列)

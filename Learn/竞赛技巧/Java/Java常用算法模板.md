@@ -1,5 +1,17 @@
 # Java常用算法模板
 
+### 最大公约数 and 最小公倍数
+```java
+// 求 a，b 的最大公约数
+static int gcd(int a, int b){
+	return b == 0 ? a : gcd(b, a % b);
+}
+// 求 a，b 的最小公倍数
+static int lcm(int a, int b){
+	return a * b / gcd(a, b);
+}
+```
+
 ### 质数判断
 ```java
 // 大于等于5的质数一定和6的倍数相邻，1不是质数

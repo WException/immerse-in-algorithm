@@ -31,17 +31,29 @@ static boolean isPrime(int num){
 
 ```
 
-### 最大公因数/最小公倍数
-```java
-// 最大公约数，此法原理为欧几里得算法，可以理解为是发现的一个规律，不必深究
-int gcd(int a, int b) {
-    return b == 0 ? a : gcd(b, a % b);
-}
-// 最小公倍数=两数之积/两数最大公约数
-int lcm(int a, int b) {
-    return a * b / gcd(a, b);
-}
+### 分解质因数
 
+```java
+// 结果 ans 为不重复的质因数个数
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        long n = scan.nextLong();
+        long ans = 0;
+        for (long i = 2; i * i <= n; i++) {
+        	if(n % i == 0) {
+        		ans++;
+        		while(n % i == 0) n /= i;
+        	}
+        }
+        
+        if (n > 1) ans++;
+        System.out.println(ans);
+        scan.close();
+    }
+}
 ```
 
 ### BFS

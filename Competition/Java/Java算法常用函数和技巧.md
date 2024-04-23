@@ -1,4 +1,4 @@
-# Java算法常用函数
+# Java算法常用类和函数
 
 ## String类
 ```java
@@ -109,16 +109,54 @@ long getTimeInMillis()
 
 Java中的BigDecimal类可以表示任意大小(任意精度)的数值，其范围理论上是无限的。
 
-它可以存储非常大或非常小的数值，无论是正数、负数还是零，只要内存允许，都可以进行精确表示。由于它不依赖于固定精度的浮点数表示，所以不会受到浮点数精度限制的问题
-
-
-> 常用方法
+> 常用方式
 
 ```java
-/*初始化*/
-import java.math.BigDecimal;
-BigDecimal num = new BigDecimal(String);
+BigDecimal num1 = new BigDecimal(3);
+BigDecimal num2 = new BigDecimal(2);
 
-BigDecimal multiply(BigDecimal) // 相乘
-BigDecimal subtract(BigDecimal) // 相加
+// 比较大小
+if ( num1.compareTo(num2) == 1 ) //等同于num1 > num2
+
+// 四则运算
+num1 = num1.add(num2); // 加
+num1 = num1.subtract(num2); // 减
+num1 = num1.multiply(num2); // 乘
+num1 = num1.divide(num2); // 除
+
+// 取余
+BigDecimal[] nums3 = num1.divideAndRemainder(num2);
+// nums3包含两个元素，第一个元素为两数相除的商，第二个元素为余数。
+
+```
+
+# 常用技巧
+
+竞赛中尽量使用静态环境变量，
+
+## 快速IO
+
+```java
+import java.io.*;
+
+public class Example {
+
+  public static void main(String[] args) throws IOException {
+      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+      StreamTokenizer in = new StreamTokenizer(br);
+      PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
+      while (in.nextToken() != StreamTokenizer.TT_EOF) {
+    	  // 使用in.nval读入，会自动过滤空格和换行
+    	  int n = (int)in.nval;
+    	  // 读完一个值之后使用in.nextToken()跳到下一个值
+    	  in.nextToken();
+    	  // 这里输出只是暂存到内存中了
+          out.println("ans");
+      }
+      
+      // 一次性把暂存的输出全输出，相当于只进行一次io操作
+      out.flush();
+      out.close();
+  }
+}
 ```

@@ -48,8 +48,8 @@ stack.removeLast(); // 出栈
     queue.offer(1); // 入队
     queue.poll();   // 出队
     queue.peek();   // 获取队头元素
-    stack.size();   // 队列的大小
-    stack.isEmpty();// 判断队列是否为空
+    queue.size();   // 队列的大小
+    queue.isEmpty();// 判断队列是否为空
 ```
 
 ## 栈和队列的替代
@@ -88,4 +88,26 @@ public class Main {
 ```
 
 ## PriorityQueue (优先队列)
-[优先队列](https://www.cainiaojc.com/java/java-priorityqueue.html)
+
+```java
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // 创建小根堆
+        PriorityQueue<Integer> queuea = new PriorityQueue<>();
+        // 创建大根堆
+        PriorityQueue<Integer> queueb = new PriorityQueue<>((a, b) -> (b - a));
+
+        // 入堆
+        numbers.add(4);
+        numbers.offer(1);
+
+        // 获取元素，不弹出
+        numbers.peek();
+
+        // 获取元素，弹出
+        numbers.poll();
+    }
+}
+```

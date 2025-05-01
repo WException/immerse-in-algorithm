@@ -12,45 +12,47 @@
 
 注：为了更加容易理解思路，代码采用更容易理解的方式书写，所以大多数的解题代码都有很大的可优化空间。
 
-## 蓝桥杯备赛指南
+---
 
-学习资源推荐
+## ✨ 算法竞赛技巧
 
-> OI WiKi：https://oi-wiki.org/
+*   [常用函数技巧-Java](./Competition/Java/Java算法常用函数和技巧.md)
+*   [常用数据结构-Java](./Competition/Java/Java算法常用数据结构.md)
+
+---
+
+## 📚 蓝桥杯备赛指南
+
+### 学习资源推荐
+
+**OI Wiki**：https://oi-wiki.org/
 
 OI Wiki 致力于成为一个免费开放且持续更新的 编程竞赛 知识整合站点，大家可以在这里获取与竞赛相关的、有趣又实用的知识。我们为大家准备了竞赛中的基础知识、常见题型、解题思路以及常用工具等内容，帮助大家更快速深入地学习编程竞赛中涉及到的知识。
 
-> 哔哩哔哩up主：灵茶山艾府 https://space.bilibili.com/206214
+**B站UP主 - 灵茶山艾府**：https://space.bilibili.com/206214
 
 跟着 灵茶山艾府 一起打 [力扣LeetCode](https://leetcode.cn/contest/) 周赛，每周都有详细的题解视频直播，题解通俗易懂。
 
-> 蓝桥杯官方题库练习
+**蓝桥杯官方题库练习**
 
 最后阶段一定要多刷蓝桥杯官方的题库，因为蓝桥杯题目和其它算法题网站的题目是有一些风格的差别的。
 
-* 渠道一：https://lx.lanqiao.cn/problemsets.page
+*   渠道一：https://www.lanqiao.cn/problems/
+*   渠道二：https://www.lanqiao.cn/oj-contest/
 
-* 渠道二：https://www.lanqiao.cn/problems/
-
-> Hello 算法
+**Hello 算法**
 
 地址：https://www.hello-algo.com/
 
-github 60k star，500 幅动画图解、12 种编程语言代码、3000 条社区问答，助你快速入门数据结构与算法
+GitHub 60k star，500 幅动画图解、12 种编程语言代码、3000 条社区问答，助你快速入门数据结构与算法
 
-## 最后
+---
 
-🏗️ 添砖加瓦
+## 目录 / Contents
 
-欢迎大家提出问题，或者提交PR贡献代码。关于如何提交PR请看：[贡献指南]()
+<details>
+<summary><strong>蓝桥杯题解</strong> (点击展开)</summary>
 
-## 目录
-
-### 算法竞赛技巧
-* [常用算法模板-Java](./Learn/竞赛技巧/Java/Java常用算法模板.md)
-* [常用数据结构-Java](./Learn/竞赛技巧/Java/Java算法常用数据结构.md)
-
-### 蓝桥杯题解
 * [97.k倍区间](./problems/蓝桥杯/97.k倍区间.md)
 * [99.分巧克力](./problems/蓝桥杯/99.分巧克力.md)
 * [101.拉马车](./problems/蓝桥杯/101.拉马车.md)
@@ -143,11 +145,23 @@ github 60k star，500 幅动画图解、12 种编程语言代码、3000 条社�
 * [19709.好数](./problems/蓝桥杯/19709.好数)
 * [20178.打花结【算法赛】](./problems/蓝桥杯/20178.打花结【算法赛】)
 
+</details>
 
-### ACWing题解
+<details>
+<summary><strong>ACWing题解</strong> (点击展开)</summary>
 
-* [503.借教室](./problems/ACWing/503.借教室)
-* [562.壁画](./problems/ACWing/562.壁画)
+* [503.借教室](./problems/ACWing/503.借教室.md)
+* [562.壁画](./problems/ACWing/562.壁画.md)
 * [5396.棋盘](./problems/ACWing/5396.棋盘)
 * [5561.棋子数量](./problems/ACWing/5561.棋子数量)
 * [5562.最大生产](./problems/ACWing/5562.最大生产)
+
+</details>
+
+---
+
+## 🤝 最后
+
+🏗️ **添砖加瓦**
+
+欢迎大家提出问题，或者提交PR贡献代码。关于如何提交PR请看：[贡献指南](./CONTRIBUTING.md)

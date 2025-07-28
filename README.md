@@ -16,6 +16,7 @@
 
 ## ✨ 算法竞赛技巧
 
+*   [常用模板](./Competition/常用算法模板.md)
 *   [常用函数技巧-Java](./Competition/Java/Java算法常用函数和技巧.md)
 *   [常用数据结构-Java](./Competition/Java/Java算法常用数据结构.md)
 

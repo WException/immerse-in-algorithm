@@ -54,6 +54,7 @@ GitHub 60k star，500 幅动画图解、12 种编程语言代码、3000 条社�
 <details>
 <summary><strong>蓝桥杯题解</strong> (点击展开)</summary>
 
+* [94.赢球票](./problems/蓝桥杯/94.赢球票.md)
 * [96.Excel地址](./problems/蓝桥杯/96.Excel地址.md)
 * [97.k倍区间](./problems/蓝桥杯/97.k倍区间.md)
 * [99.分巧克力](./problems/蓝桥杯/99.分巧克力.md)
